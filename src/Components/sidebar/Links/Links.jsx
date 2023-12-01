@@ -28,7 +28,7 @@ const itemVariants = {
 
 const Links = () => {
   const items = [
-    "HomePage",
+    "Homepage",
     "Services",
     "Portfolio",
     "Contact",
