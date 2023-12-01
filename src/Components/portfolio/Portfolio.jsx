@@ -63,7 +63,7 @@ const Single = ({ item }) => {
                         <p>
                             {item.desc}
                         </p>
-                        <button>See Demo</button>
+                        <motion.button whileHover={{background: "lightgray", color: "black"}}>See Demo</motion.button>
                     </motion.div>
                 </div>
             </div>

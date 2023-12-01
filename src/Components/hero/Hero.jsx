@@ -41,7 +41,7 @@ const Hero = () => {
     return (
         <div className="hero">
             <div className="imageContainer">
-                <img style={{ width: "700px" }} src="/it-me-removebg.png" alt="it-me" />
+                <img className="avatar" src="/it-me-removebg.png" alt="it-me" />
             </div>
             <div className="wrapper">
                 <motion.div
