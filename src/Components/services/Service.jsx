@@ -4,84 +4,81 @@ import { useRef } from "react"
 
 const variants = {
   initial:{
-    x: -500,
+    y: 200,
     opacity: 0,
-    y: 100
   },
   animate:{
     x: 0,
     opacity: 1,
     y: 0,
     transition:{
-      duration: 1,
-      staggerChildren: 0.1
+      duration: 1.3,
+      staggerChildren: 1,
     }
   }
 }
 
 const Service = () => {
 
-  const ref = useRef()
-  const isInView = useInView(ref, {margin: "-100px"})
+  // const ref = useRef()
+  // const isInView = useInView(ref, {margin: "-100px"})
 
   return (
-    <motion.div className="services" 
-    variants={variants} 
-    initial="initial" 
-    ref={ref}
-    whileInView="animate"
-    // animate={isInView && "animate"}
-    >
-        <motion.div className="textContainer" variants={variants}>
+    <motion.div className="services" >
+        <motion.div className="textContainer" 
+        variants={variants}
+        >
           <p>
               I focus on helping your brand grow 
               <br/> and move forward
           </p>
           <hr/>
         </motion.div>
-        <motion.div className="titleContainer" variants={variants}>
+        <motion.div className="titleContainer" 
+        variants={variants}
+        >
           <div className="title">
               <img src="/people.webp" alt="teams" />
               <h1>
-                <motion.b whileHover={{color:"orange", cursor:"pointer"}}>Unique</motion.b> Ideas
+                <motion.b whileHover={{color:"orange", cursor:"pointer"}}>Passion</motion.b> For Dream
               </h1>
           </div>
           <div className="title">
               <h1>
-                <motion.b whileHover={{color:"orange", cursor:"pointer"}}>For Your</motion.b> Business.
+                <motion.b whileHover={{color:"orange", cursor:"pointer"}}>Never</motion.b> Give Up.
               </h1>
-              <motion.button whileHover={{background: "lightgray", color: "black"}}>WHAT WE DO?</motion.button>
+              <motion.button whileHover={{background: "lightgray", color: "black"}}>WHAT I HAVE?</motion.button>
           </div>
         </motion.div>
-        <motion.div className="listContainer" variants={variants}>
+        <motion.div className="listContainer" 
+        variants={variants}
+        initial="initial" 
+        whileInView="animate"
+        >
           <motion.div className="box" whileHover={{background: "lightgray", color: "black"}}>
-              <h2>Branding</h2>
+              <h2>Kiến Thức</h2>
               <p>
-                Hogwarts Legacy là một game nhập vai hành động thế giới mở lấy bối cảnh thế giới lần đầu tiên được giới thiệu trong sách Harry Potter. Bắt đầu cuộc hành 
-              </p>
-              <button>Go</button>
+                Tôi có kiến nền về HTML, CSS, Javascript, Java Spring Boot, React.js, Vue.js, MySQL, GitHub, và Figma, có thể xử lý các thư viện hỗ trợ design layout như Bootstrap, Animate.css, Framer-motion
+              </p>              
           </motion.div>
           <motion.div className="box" whileHover={{background: "lightgray", color: "black"}}>
-              <h2>Branding</h2>
+              <h2>Kinh Nghiệm</h2>
               <p>
-                Hogwarts Legacy là một game nhập vai hành động thế giới mở lấy bối cảnh thế giới lần đầu tiên được giới thiệu trong sách Harry Potter. Bắt đầu cuộc hành 
-              </p>
-              <button>Go</button>
+                Tôi có 1 năm kinh nghiệm xử lý nghiệp vụ fullstack với java spring, react.js, vue.js, mySQL bên cạnh đó tôi có kinh nghiệm làm việc với GitHub cũng khá tốt có thể tự xử lý confict.
+              </p>  
           </motion.div>
           <motion.div className="box" whileHover={{background:"lightgray", color:"black"}}>
-              <h2>Branding</h2>
+              <h2>Kĩ Năng</h2>
+              <p>
+                Tôi có kĩ năng xử lý vấn đề, làm việc nhóm và độc lập tốt, có thể tự tuy duy vấn đề, có kinh nghiệm trong quản lý nhóm, bên cạnh đó tôi có khả năng hoà nhập và thích nghi với môi trường ở mức tốt
+              </p>  
+          </motion.div>
+          {/* <motion.div className="box" whileHover={{background:"lightgray", color:"black"}}>
+              <h2>Dự Án</h2>
               <p>
                 Hogwarts Legacy là một game nhập vai hành động thế giới mở lấy bối cảnh thế giới lần đầu tiên được giới thiệu trong sách Harry Potter. Bắt đầu cuộc hành 
               </p>
-              <button>Go</button>
-          </motion.div>
-          <motion.div className="box" whileHover={{background:"lightgray", color:"black"}}>
-              <h2>Branding</h2>
-              <p>
-                Hogwarts Legacy là một game nhập vai hành động thế giới mở lấy bối cảnh thế giới lần đầu tiên được giới thiệu trong sách Harry Potter. Bắt đầu cuộc hành 
-              </p>
-              <button>Go</button>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
     </motion.div>
   )

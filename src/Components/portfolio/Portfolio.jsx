@@ -5,27 +5,31 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion"
 const items = [
     {
         id: 1,
-        title: "React Commerce",
-        img: "https://scontent.fsgn2-4.fna.fbcdn.net/v/t39.30808-6/358679431_1650829995420890_2641625472700883408_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=9c7eae&_nc_ohc=VgQL1QuSiPwAX_cEKjQ&_nc_oc=AQluiKOAy8O3nfR4Z5CvbhqMKLswTRH7sa9DJpUPmaFtNg6oZANG3xjvgi9nB7zuVz2adUudmU8NFRQ5ftVdhvhH&_nc_ht=scontent.fsgn2-4.fna&oh=00_AfDpB_ychEIGj9LWJFuK6KRjgnAVb6QjZT62Ltiq4ko3Fg&oe=656F0AEE",
-        desc: "Trong đoạn code trên, toggleDropdown sẽ mở hoặc đóng dropdown tùy thuộc vào trạng thái hiện tại. activeDropdown được sử dụng để theo dõi dropdown nào đang được mở, để chỉ hiển thị dropdown tương ứng với menu được click"
+        title: "Sapphire Sands",
+        date: "8-May-2023 -- 12-July-2023",
+        img: "../../../public/SAPPHIRE SANDS RESORT.png",
+        desc: "Đây là một dự án đầu tay về xử dụng về react.js, java spring boot, mySQL. Với sự tham gia của 5 thành viên để phát triển, dự án này mang đến cho người dùng, trải nghiệm 1 hệ thống đặt phòng dành riêng cho khách sạn với các dịch vụ đi kèm."
     },
     {
         id: 2,
-        title: "Vue manager",
-        img: "https://scontent.fsgn2-4.fna.fbcdn.net/v/t39.30808-6/358679431_1650829995420890_2641625472700883408_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=9c7eae&_nc_ohc=VgQL1QuSiPwAX_cEKjQ&_nc_oc=AQluiKOAy8O3nfR4Z5CvbhqMKLswTRH7sa9DJpUPmaFtNg6oZANG3xjvgi9nB7zuVz2adUudmU8NFRQ5ftVdhvhH&_nc_ht=scontent.fsgn2-4.fna&oh=00_AfDpB_ychEIGj9LWJFuK6KRjgnAVb6QjZT62Ltiq4ko3Fg&oe=656F0AEE",
-        desc: "Trong đoạn code trên, toggleDropdown sẽ mở hoặc đóng dropdown tùy thuộc vào trạng thái hiện tại. activeDropdown được sử dụng để theo dõi dropdown nào đang được mở, để chỉ hiển thị dropdown tương ứng với menu được click"
+        title: "JOT",
+        date: "8-Jully-2023 -- 29-Sep-2023",
+        img: "../../../public/Jot.png",
+        desc: "JOT(Job Opportunity) là dự án, làm về 1 trang web về tìm việc làm sử dụng Java Spring Boot, vue.js , mySQL để phát triển, với sự tham gia phát triển gồm 5 thành viên. Hệ thống tìm việc giúp đơn giản hóa quá trình đăng ký và theo dõi tiến trình tìm việc, cung cấp thông tin chi tiết về các công ty và vị trí tuyển dụng."
     },
     {
         id: 3,
-        title: "Shop Shoes",
-        img: "https://scontent.fsgn2-4.fna.fbcdn.net/v/t39.30808-6/358679431_1650829995420890_2641625472700883408_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=9c7eae&_nc_ohc=VgQL1QuSiPwAX_cEKjQ&_nc_oc=AQluiKOAy8O3nfR4Z5CvbhqMKLswTRH7sa9DJpUPmaFtNg6oZANG3xjvgi9nB7zuVz2adUudmU8NFRQ5ftVdhvhH&_nc_ht=scontent.fsgn2-4.fna&oh=00_AfDpB_ychEIGj9LWJFuK6KRjgnAVb6QjZT62Ltiq4ko3Fg&oe=656F0AEE",
-        desc: "Trong đoạn code trên, toggleDropdown sẽ mở hoặc đóng dropdown tùy thuộc vào trạng thái hiện tại. activeDropdown được sử dụng để theo dõi dropdown nào đang được mở, để chỉ hiển thị dropdown tương ứng với menu được click"
+        title: "Manager School",
+        date: "10-Oct-2023 -- 26-Nov-2023",
+        img: "../../../public/manager-bg.png",
+        desc: "Manager School là 1 dự án phát triển hệ thống quản lý 1 trường học, sử dụng Java Spring Boot, Vue.js, MySQL, IoT để phát triển, với sự tham gia phát triển gồm 3 thành viên. Dự án quản lý trường học là một hệ thống toàn diện được thiết kế để cải thiện hiệu suất và quản lý các hoạt động trong môi trường giáo dục."
     },
     {
         id: 4,
-        title: "Economics ",
-        img: "https://scontent.fsgn2-4.fna.fbcdn.net/v/t39.30808-6/358679431_1650829995420890_2641625472700883408_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=9c7eae&_nc_ohc=VgQL1QuSiPwAX_cEKjQ&_nc_oc=AQluiKOAy8O3nfR4Z5CvbhqMKLswTRH7sa9DJpUPmaFtNg6oZANG3xjvgi9nB7zuVz2adUudmU8NFRQ5ftVdhvhH&_nc_ht=scontent.fsgn2-4.fna&oh=00_AfDpB_ychEIGj9LWJFuK6KRjgnAVb6QjZT62Ltiq4ko3Fg&oe=656F0AEE",
-        desc: "Trong đoạn code trên, toggleDropdown sẽ mở hoặc đóng dropdown tùy thuộc vào trạng thái hiện tại. activeDropdown được sử dụng để theo dõi dropdown nào đang được mở, để chỉ hiển thị dropdown tương ứng với menu được click"
+        title: "Cosmetics",
+        date: "20-Oct-2023 -- 1-Jan-2024",
+        img: "../../../public/cosmetics-logo.png",
+        desc: "Cosmetics là 1 dự án đang được phát triển bởi đội ngũ, được sử dụng React.js, MySQL, Java Spring Boot và AI, dự án tham gia gồm 5 thành viên. Cosmetics hứa hẹn sẽ là 1 sàn thương mại giúp nhiều nhà cung cấp sản phẩm có thể trao đổi mua bán 1 cách chính thống. "
     }
 ]
 
@@ -51,6 +55,9 @@ const Single = ({ item }) => {
 
     const y = useTransform(scrollYProgress, [0, 1], [-300, 300])
 
+    // const hanđleClick = () =>{
+    //     window.location.href = `#${Links}`;
+    // }
     return (
         <motion.section  variants={variants} animate="animate">
             <div className="container">
@@ -60,10 +67,11 @@ const Single = ({ item }) => {
                     </div>
                     <motion.div className="textContainer" style={{ y }}>
                         <h2>{item.title}</h2>
+                        <p>{item.date}</p>
                         <p>
                             {item.desc}
                         </p>
-                        <motion.button whileHover={{background: "lightgray", color: "black"}}>See Demo</motion.button>
+                        {/* <motion.button onClick={hanđleClick} whileHover={{background: "lightgray", color: "black"}}>Liên Hệ Với Tôi</motion.button> */}
                     </motion.div>
                 </div>
             </div>

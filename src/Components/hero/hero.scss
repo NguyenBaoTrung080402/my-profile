@@ -31,13 +31,16 @@
                 font-size: 30px;
                 color: rebeccapurple;
                 letter-spacing: 10px;
+                user-select: none;
             }
 
             h1{
                 font-size: 75px;
-
+                user-select: none;
+                
                 @include mobile{
                     font-size: 36px;
+                    user-select: none;
                 }
             }
 
@@ -93,5 +96,6 @@
         color: #ffffff09;
         width: 50%;
         font-weight: bolder;
+        user-select: none;
     }
 }
