@@ -64,13 +64,13 @@ const Service = () => {
           <motion.div className="box" whileHover={{background: "lightgray", color: "black"}}>
               <h2>Kinh Nghiệm</h2>
               <p>
-                Tôi có 1 năm kinh nghiệm xử lý nghiệp vụ fullstack với java spring, react.js, vue.js, mySQL bên cạnh đó tôi có kinh nghiệm làm việc với GitHub cũng khá tốt có thể tự xử lý confict.
+                Tôi có 1 năm kinh nghiệm xử lý nghiệp vụ fullstack với Java Spring Boot, React.js, Vue.js, MySQL bên cạnh đó tôi có kinh nghiệm làm việc với GitHub có thể tự xử lý confict. Bên cạnh đó tôi còn có kinh nghiệm làm việc với google apps script,
               </p>  
           </motion.div>
           <motion.div className="box" whileHover={{background:"lightgray", color:"black"}}>
               <h2>Kĩ Năng</h2>
               <p>
-                Tôi có kĩ năng xử lý vấn đề, làm việc nhóm và độc lập tốt, có thể tự tuy duy vấn đề, có kinh nghiệm trong quản lý nhóm, bên cạnh đó tôi có khả năng hoà nhập và thích nghi với môi trường ở mức tốt
+                Tôi có kĩ năng xử lý vấn đề, làm việc nhóm và độc lập tốt, có thể tự tuy duy vấn đề, có kinh nghiệm trong quản lý nhóm, bên cạnh đó tôi có khả năng hoà nhập và thích nghi với môi trường ở mức tốt.
               </p>  
           </motion.div>
           {/* <motion.div className="box" whileHover={{background:"lightgray", color:"black"}}>
