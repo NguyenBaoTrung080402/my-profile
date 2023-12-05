@@ -1,6 +1,7 @@
 html{
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
+    transition: .9s;
 }
 
 *{
@@ -19,7 +20,6 @@ body{
 a{
     text-decoration: none;
     color: inherit;
-    
 }
 
 section{
